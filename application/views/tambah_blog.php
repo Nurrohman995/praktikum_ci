@@ -11,16 +11,16 @@
     	<table>
          <tr>
             <td><strong>Judul : </strong></td>
-            <td> <input type="text" placeholder="Judul" name="judul"></td>
+            <td> <input type="text" class="form-control" placeholder="Judul" name="judul"></td>
          </tr>
          <tr>
              <td><strong>Isi : </strong></td>
              <td>
-                 <input type="text" placeholder="Isi" name="isi" name="isi">
+                 <input type="text" class="form-control" placeholder="Isi" name="isi" name="isi">
              </td>
          </tr> 
          <tr>
-             <td><button type="submit">Simpan</button></td>
+             <td><button type="submit" class="btn btn-primary">Simpan</button></td>
          </tr>
         </table>
     </form>
