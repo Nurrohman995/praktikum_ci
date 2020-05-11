@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="<?php echo base_url('proses_tambah') ?>" method="POST">
+    <form action="<?php echo base_url('proses_tambah') ?>" method="POST" enctype="multipart/form-data">
     <h4>Form Input</h4>
     	<table>
          <tr>
@@ -19,6 +19,12 @@
                  <input type="text" class="form-control" placeholder="Isi" name="isi" name="isi">
              </td>
          </tr> 
+         <tr>
+             <td>Gambar :</td>
+             <td>
+                 <input type="file" class="form-control" name="image" placeholder="Gambar">
+             </td>
+         </tr>
          <tr>
              <td><button type="submit" class="btn btn-primary">Simpan</button></td>
          </tr>

@@ -8,7 +8,7 @@
 <body>
     <form action="<?php echo base_url('proses_tambah') ?>" method="POST">
     <h4>Detail</h4>
-    	<table>
+    	<table >
          <tr>
             <td><strong>Judul : </strong></td>
             <td><?= $entry->judul ?></td>
@@ -18,6 +18,13 @@
              <td>
                 <?= $entry->isi ?>
              </td>
+         </tr>
+         <tr>
+            <td>Gambar :</td>
+            <td>
+                <!-- <img src="<?php echo base_url('upload/'.$entry->gambar) ?>" style="width: 20%; " class="img-fluid" alt="Responsive image"> -->
+                <img src="<?php echo $gambar ?>" style="width: 20%; " class="img-fluid" alt="Responsive image">
+            </td>
          </tr>
          <tr>
              <td><strong>Waktu</strong></td>

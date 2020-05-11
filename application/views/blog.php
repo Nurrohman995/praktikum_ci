@@ -21,7 +21,7 @@
                         <td><?= $e->isi ?></td>
                         <td><?= $e->waktu ?></td>
                         <td>
-                            <a href="<?php echo base_url('welcome/detail/'.$e->id) ?>">Baca</a>
+                            <a href="<?php echo base_url('welcome/detail/'.$e->id) ?>" class="btn btn-primary btn-sm"> Baca</a> <a href="<?php echo base_url('welcome/edit/'.$e->id) ?>" class="btn btn-success btn-sm"> Edit</a> <a href="<?php echo base_url('welcome/delete/'.$e->id) ?>" class="btn btn-danger btn-sm" onClick="return doconfirm();"> Hapus</a>
                         </td>
                     </tr>
                     <?php } ?>
@@ -30,3 +30,13 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function doconfirm()
+    {
+        job=confirm("Are you sure to delete permanently?");
+        if(job!=true)
+        {
+            return false;
+        }
+    }
+</script>
