@@ -1,0 +1,21 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class LoginController extends CI_Controller {
+
+	public function index()
+	{
+		// $this->load->view('login');
+		TemplateDate('tambah_blog');
+	}
+	public function doLogin(){
+		$username = $this->input->post('username', TRUE);
+		$password = $this->input->post('password', TRUE);
+		if($username == 'admin' && $password == 'admin'){
+			$this->sesssion->set_userdata('userID', $username);
+			return redirect('Welcome');
+		}else{
+			redirect('/')
+		}
+	}
+}

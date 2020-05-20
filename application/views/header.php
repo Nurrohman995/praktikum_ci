@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +22,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo base_url('tambah') ?>">Tambah</a>
+        </li>
+        <li style="text-align: right;">
+          <a href="<?php echo base_url('BlogController/logOut') ?>">Logout</a>
         </li>
       </ul>
     </div>

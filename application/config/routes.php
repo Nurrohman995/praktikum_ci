@@ -49,7 +49,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'blogController';
+$route['welcome'] = 'welcome';
 $route['tambah'] = 'welcome/tambah';
 $route['proses_tambah'] = 'welcome/proses_tambah';
 $route['404_override'] = '';
